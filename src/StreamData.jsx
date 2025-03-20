@@ -8,7 +8,7 @@ const StreamData = () => {
 
     // Setup SignalR Connection
     const connection = new signalR.HubConnectionBuilder()
-      .withUrl("http://localhost:5116/JadwalUjianHub") // localhost:5116 alamat backend
+      .withUrl("https://seb.unpak.ac.id/api/JadwalUjianHub") // localhost:5116 alamat backend
       .withAutomaticReconnect()
       .build();
 
