@@ -3,14 +3,12 @@ import React, { useEffect, useState } from "react";
 import * as signalR from "@microsoft/signalr";
 
 const StreamData = () => {
-  const [stocks, setStocks] = useState([]);
-
   useEffect(() => {
     //fetchData();
 
     // Setup SignalR Connection
     const connection = new signalR.HubConnectionBuilder()
-      .withUrl("http://localhost:5116/JadwalUjianHub")
+      .withUrl("http://localhost:5116/JadwalUjianHub") // localhost:5116 alamat backend
       .withAutomaticReconnect()
       .build();
 
